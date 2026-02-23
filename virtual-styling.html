@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Virtual Styling | The Niyati Style Edit</title>
+  <title>Closet Edit | The Niyati Style Edit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -40,40 +40,44 @@
       margin: auto;
     }
 
-    .upload-section {
+    .closet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .closet-item {
+      display: block;  /* make the link behave as a card */
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
       text-align: center;
-      margin-bottom: 50px;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: #222;
     }
 
-    #userPhoto {
-      max-width: 300px;
-      border-radius: 15px;
-      margin-top: 20px;
-      display: none;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    .closet-item:hover {
+      transform: scale(1.05);
     }
 
-    .outfit-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
+    .closet-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
     }
 
-    .outfit-buttons button {
-      background: #000;
-      color: #fff;
-      border: none;
-      padding: 14px 28px;
-      font-size: 16px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: 0.3s;
+    .closet-item h3 {
+      margin: 12px 0 8px;
+      font-size: 20px;
+      color: #333;
     }
 
-    .outfit-buttons button:hover {
-      background: #444;
+    .closet-item p {
+      padding: 0 10px 15px;
+      font-size: 14px;
+      color: #555;
     }
 
     footer {
@@ -81,16 +85,6 @@
       color: #fff;
       text-align: center;
       padding: 30px 20px;
-      margin-top: 50px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 32px;
-      }
-      .outfit-buttons {
-        flex-direction: column;
-      }
     }
   </style>
 </head>
@@ -98,22 +92,30 @@
 <body>
 
 <header>
-  <h1>Virtual Styling</h1>
-  <p>Upload your photo and try different outfits from our curated wardrobe.</p>
+  <h1>Closet Edit</h1>
+  <p>Click on any outfit to try it virtually in Virtual Styling.</p>
 </header>
 
 <section>
   <div class="container">
-    <div class="upload-section">
-      <input type="file" id="uploadPhoto" accept="image/*">
-      <br>
-      <img id="userPhoto" src="" alt="Your uploaded photo">
-    </div>
+    <div class="closet-grid">
+      <a href="virtual-styling.html" class="closet-item">
+        <img src="images/closet1.jpg" alt="Outfit 1">
+        <h3>Outfit 1</h3>
+        <p>Mix and match for casual days or work meetings.</p>
+      </a>
 
-    <div class="outfit-buttons">
-      <button onclick="changeOutfit('images/virtual-outfit1.jpg')">Outfit 1</button>
-      <button onclick="changeOutfit('images/virtual-outfit2.jpg')">Outfit 2</button>
-      <button onclick="changeOutfit('images/virtual-outfit3.jpg')">Outfit 3</button>
+      <a href="virtual-styling.html" class="closet-item">
+        <img src="images/closet2.jpg" alt="Outfit 2">
+        <h3>Outfit 2</h3>
+        <p>Stylish and professional combinations for your work wardrobe.</p>
+      </a>
+
+      <a href="virtual-styling.html" class="closet-item">
+        <img src="images/closet3.jpg" alt="Outfit 3">
+        <h3>Outfit 3</h3>
+        <p>Perfect party and event-ready looks to impress.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -121,31 +123,6 @@
 <footer>
   <p>© 2026 The Niyati Style Edit</p>
 </footer>
-
-<script>
-  const uploadPhoto = document.getElementById('uploadPhoto');
-  const userPhoto = document.getElementById('userPhoto');
-
-  uploadPhoto.addEventListener('change', function() {
-    const file = this.files[0];
-    if(file) {
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        userPhoto.src = e.target.result;
-        userPhoto.style.display = 'block';
-      }
-      reader.readAsDataURL(file);
-    }
-  });
-
-  function changeOutfit(outfitImage) {
-    if(userPhoto.src) {
-      userPhoto.src = outfitImage;
-    } else {
-      alert("Please upload your photo first!");
-    }
-  }
-</script>
 
 </body>
 </html>
