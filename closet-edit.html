@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Closet Edit | The Niyati Style Edit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f5f2;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 100px 20px 60px;
+      text-align: center;
+      background: #efece6;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .closet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .closet-item {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .closet-item:hover {
+      transform: scale(1.05);
+    }
+
+    .closet-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .closet-item h3 {
+      margin: 12px 0 8px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .closet-item p {
+      padding: 0 10px 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Closet Edit</h1>
+  <p>Preview and organize your wardrobe — see how every outfit works together.</p>
+</header>
+
+<section>
+  <div class="container">
+    <div class="closet-grid">
+      <div class="closet-item">
+        <img src="images/closet1.jpg" alt="Outfit 1">
+        <h3>Outfit 1</h3>
+        <p>Mix and match for casual days or work meetings.</p>
+      </div>
+      <div class="closet-item">
+        <img src="images/closet2.jpg" alt="Outfit 2">
+        <h3>Outfit 2</h3>
+        <p>Stylish and professional combinations for your work wardrobe.</p>
+      </div>
+      <div class="closet-item">
+        <img src="images/closet3.jpg" alt="Outfit 3">
+        <h3>Outfit 3</h3>
+        <p>Perfect party and event-ready looks to impress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 The Niyati Style Edit</p>
+</footer>
+
+</body>
+</html>
