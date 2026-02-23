@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Stylist | Book via Instagram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f5f2;
+      color: #222;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .text p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #444;
+    }
+
+    .image {
+      flex: 1;
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="text">
+      <h1>Personal Styling Made Simple</h1>
+      <p>
+        Virtual personal styling sessions to help you look confident,
+        stylish, and comfortable — all booked through Instagram.
+      </p>
+
+      <!-- CHANGE YOUR INSTAGRAM USERNAME BELOW -->
+      <a class="btn" href="https://instagram.com/yourusername" target="_blank">
+        Book via Instagram
+      </a>
+    </div>
+
+    <div class="image">
+      <!-- Replace image link later -->
+      <img src="https://images.unsplash.com/photo-1520975693411-b53f7c8c4a34" alt="Fashion Styling">
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>My Services</h2>
+  <br>
+
+  <div class="services">
+    <div class="card">
+      <h3>Virtual Styling</h3>
+      <p>Outfit planning and styling advice via Instagram call or chat.</p>
+    </div>
+
+    <div class="card">
+      <h3>Closet Edit</h3>
+      <p>Learn how to style clothes you already own in new ways.</p>
+    </div>
+
+    <div class="card">
+      <h3>Event Styling</h3>
+      <p>Special looks for parties, weddings, or important occasions.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <p>Message me on Instagram → Tell me your style needs → Get styled ✨</p>
+</section>
+
+<footer>
+  <p>© 2026 Personal Stylist | Book via Instagram</p>
+</footer>
+
+</body>
+</html>
