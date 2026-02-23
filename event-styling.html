@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Styling | The Niyati Style Edit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f5f2;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 100px 20px 60px;
+      text-align: center;
+      background: #efece6;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .event-card {
+      display: block;
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .event-card:hover {
+      transform: scale(1.03);
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .event-card h3 {
+      margin: 15px 0 10px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .event-card p {
+      padding: 0 15px 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Event Styling</h1>
+  <p>Click on a category to explore styling options.</p>
+</header>
+
+<section>
+  <div class="container">
+    <div class="event-grid">
+      <a href="virtual-styling.html" class="event-card">
+        <img src="images/virtual-styling.jpg" alt="Virtual Styling">
+        <h3>Virtual Styling</h3>
+        <p>Experience styling from the comfort of your home with our virtual styling service.</p>
+      </a>
+
+      <a href="closet-edit.html" class="event-card">
+        <img src="images/closet-edit.jpg" alt="Closet Edit">
+        <h3>Closet Edit</h3>
+        <p>Organize your wardrobe and see how every outfit can work together effortlessly.</p>
+      </a>
+
+      <a href="event-styling.html" class="event-card">
+        <img src="images/event-styling.jpg" alt="Event Styling">
+        <h3>Event Styling</h3>
+        <p>Curated looks for weddings, corporate events, and parties that make a lasting impression.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 The Niyati Style Edit</p>
+</footer>
+
+</body>
+</html>
