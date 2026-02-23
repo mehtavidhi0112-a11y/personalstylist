@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Styling | The Niyati Style Edit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f5f2;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 100px 20px 60px;
+      text-align: center;
+      background: #efece6;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .upload-section {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    #userPhoto {
+      max-width: 300px;
+      border-radius: 15px;
+      margin-top: 20px;
+      display: none;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .outfit-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .outfit-buttons button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .outfit-buttons button:hover {
+      background: #444;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+      .outfit-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Virtual Styling</h1>
+  <p>Upload your photo and try different outfits from our curated wardrobe.</p>
+</header>
+
+<section>
+  <div class="container">
+    <div class="upload-section">
+      <input type="file" id="uploadPhoto" accept="image/*">
+      <br>
+      <img id="userPhoto" src="" alt="Your uploaded photo">
+    </div>
+
+    <div class="outfit-buttons">
+      <button onclick="changeOutfit('images/virtual-outfit1.jpg')">Outfit 1</button>
+      <button onclick="changeOutfit('images/virtual-outfit2.jpg')">Outfit 2</button>
+      <button onclick="changeOutfit('images/virtual-outfit3.jpg')">Outfit 3</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 The Niyati Style Edit</p>
+</footer>
+
+<script>
+  const uploadPhoto = document.getElementById('uploadPhoto');
+  const userPhoto = document.getElementById('userPhoto');
+
+  uploadPhoto.addEventListener('change', function() {
+    const file = this.files[0];
+    if(file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        userPhoto.src = e.target.result;
+        userPhoto.style.display = 'block';
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+
+  function changeOutfit(outfitImage) {
+    if(userPhoto.src) {
+      userPhoto.src = outfitImage;
+    } else {
+      alert("Please upload your photo first!");
+    }
+  }
+</script>
+
+</body>
+</html>
