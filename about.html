@@ -2,116 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | My Services</title>
+  <title>About | Personal Styling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: #f7f5f2;
       color: #222;
-      text-align: center;
-    }
-
-    h1 {
-      padding: 50px 20px 20px;
-    }
-
-    .services {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
+      line-height: 1.6;
       padding: 40px 20px;
     }
 
-    .service-box {
-      width: 220px;
+    h1, h2 {
+      text-align: center;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    /* Service Cards */
+    .service-card {
       background: #fff;
       border-radius: 16px;
-      padding: 15px;
-      text-decoration: none;
-      color: #222;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-      transition: transform 0.3s;
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 700px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .service-box:hover {
-      transform: scale(1.05);
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
     }
 
-    .service-box img {
-      width: 100%;
+    .service-card h3 {
+      margin-top: 0;
+      color: #b35c1e;
+    }
+
+    .free-badge {
+      display: inline-block;
+      background: #b35c1e;
+      color: #fff;
+      padding: 6px 12px;
       border-radius: 12px;
+      font-weight: bold;
+      margin-top: 10px;
     }
 
-    section.detail {
-      padding: 70px 20px;
-      background: #fff;
-      margin-top: 40px;
+    /* CTA Button */
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      background: #222;
+      color: #fff;
+      padding: 14px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: background 0.3s;
     }
 
-    section.detail img {
-      max-width: 400px;
-      width: 100%;
-      border-radius: 16px;
-      margin: 20px 0;
+    .button:hover {
+      background: #b35c1e;
     }
   </style>
 </head>
-
 <body>
 
-<h1>My Services</h1>
-
-<!-- CLICKABLE SERVICES -->
-  <a href="services.html">View Full Services</a>
-<div class="services">
-  <a href="#virtual" class="service-box">
-    <img src="images/virtual-styling.jpg">
-    <h3>Virtual Styling</h3>
-    <p>Style from home</p>
-  </a>
-
-  <a href="#closet" class="service-box">
-    <img src="images/closet-edit.jpg">
-    <h3>Closet Edit</h3>
-    <p>Organize your wardrobe</p>
-  </a>
-
-  <a href="#event" class="service-box">
-    <img src="images/event-styling.jpg">
-    <h3>Event Styling</h3>
-    <p>Special occasions</p>
-  </a>
-</div>
-
-<!-- DETAILS -->
-<section id="virtual" class="detail">
-  <h2>Virtual Styling</h2>
-  <img src="images/virtual-styling.jpg">
+  <h1>About Me</h1>
   <p>
-    Online styling support to help you choose outfits, understand your body type,
-    and feel confident without shopping stress.
+    Hi! I’m a personal stylist passionate about helping you feel confident and stylish.
+    I specialize in virtual styling, closet edits, and event styling to make fashion simple and fun.
   </p>
-</section>
 
-<section id="closet" class="detail">
-  <h2>Closet Edit</h2>
-  <img src="images/closet-edit.jpg">
-  <p>
-    Declutter, organize, and build outfits using what you already own.
-  </p>
-</section>
+  <h2>My Styling Services</h2>
 
-<section id="event" class="detail">
-  <h2>Event Styling</h2>
-  <img src="images/event-styling.jpg">
-  <p>
-    Personalized styling for weddings, parties, and special events.
-  </p>
-</section>
+  <div class="service-card">
+    <h3>Virtual Styling (Worldwide)</h3>
+    <p>
+      One-on-one virtual styling sessions designed to help you feel confident and comfortable
+      in what you wear. This includes outfit guidance, body type understanding,
+      and personalized styling advice.
+    </p>
+    <span class="free-badge">🎥 FREE 15-minute consultation</span>
+  </div>
+
+  <div class="service-card">
+    <h3>Virtual Closet Edit</h3>
+    <p>
+      A guided virtual closet session to help you organize, declutter, and create outfits
+      using what you already own. Perfect for building a functional wardrobe.
+    </p>
+    <span class="free-badge">🎥 FREE 15-minute consultation</span>
+  </div>
+
+  <div class="service-card">
+    <h3>Event Styling (International)</h3>
+    <p>
+      Personalized styling for weddings, parties, photoshoots, and special occasions.
+      Recommendations based on your event, season, and personal style.
+    </p>
+    <span class="free-badge">🎥 FREE 15-minute consultation</span>
+  </div>
+
+  <a href="https://www.instagram.com/theniyatistyleedit" target="_blank" class="button">
+    Book Your Styling Session
+  </a>
 
 </body>
 </html>
