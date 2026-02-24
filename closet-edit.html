@@ -47,12 +47,15 @@
     }
 
     .closet-item {
+      display: block; /* make link fully clickable */
       background: #fff;
       border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
       text-align: center;
       transition: transform 0.2s;
+      text-decoration: none;
+      color: #222;
     }
 
     .closet-item:hover {
@@ -63,6 +66,7 @@
       width: 100%;
       height: 220px;
       object-fit: cover;
+      display: block;
     }
 
     .closet-item h3 {
@@ -90,27 +94,29 @@
 
 <header>
   <h1>Closet Edit</h1>
-  <p>Preview and organize your wardrobe — see how every outfit works together.</p>
+  <p>Click on any outfit to try it virtually in Virtual Styling.</p>
 </header>
 
 <section>
   <div class="container">
     <div class="closet-grid">
-      <div class="closet-item">
+      <a href="virtual-styling.html" class="closet-item">
         <img src="images/closet1.jpg" alt="Outfit 1">
         <h3>Outfit 1</h3>
         <p>Mix and match for casual days or work meetings.</p>
-      </div>
-      <div class="closet-item">
+      </a>
+
+      <a href="virtual-styling.html" class="closet-item">
         <img src="images/closet2.jpg" alt="Outfit 2">
         <h3>Outfit 2</h3>
         <p>Stylish and professional combinations for your work wardrobe.</p>
-      </div>
-      <div class="closet-item">
+      </a>
+
+      <a href="virtual-styling.html" class="closet-item">
         <img src="images/closet3.jpg" alt="Outfit 3">
         <h3>Outfit 3</h3>
         <p>Perfect party and event-ready looks to impress.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
