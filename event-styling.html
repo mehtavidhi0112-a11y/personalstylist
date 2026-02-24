@@ -2,41 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My services</title>
+  <title>Event Styling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: Arial, sans-serif; background: #f7f5f2; margin:0; padding:0; text-align:center; }
-    h1 { padding: 40px 20px; }
-    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-    a.card { display: block; width: 200px; background: #fff; border-radius: 12px; overflow: hidden; text-decoration: none; color: #222; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-    a.card:hover { transform: scale(1.05); }
-    a.card img { width: 100%; display: block; pointer-events: none; }
-    a.card h3 { margin: 10px 0 5px; font-size: 18px; }
-    a.card p { margin: 0 10px 10px; font-size: 14px; }
+    header { padding: 60px 20px; background: #efece6; }
+    header h1 { font-size: 36px; margin-bottom: 10px; }
+    header p { font-size: 18px; max-width: 700px; margin: auto; }
+    .content { padding: 40px 20px; max-width: 800px; margin:auto; text-align:left; background:#fff; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+    .content img { width:100%; max-width:600px; display:block; margin:20px auto; border-radius:10px; }
+    .content h2 { margin-top:20px; font-size:28px; }
+    .content p { font-size:16px; line-height:1.6; }
+    a.btn { display:inline-block; margin:30px auto; padding:12px 30px; background:#000; color:#fff; text-decoration:none; border-radius:25px; font-size:16px; }
+    a.btn:hover { background:#444; }
   </style>
 </head>
 <body>
 
-<h1>My Services</h1>
+<header>
+  <h1>Event Styling</h1>
+  <p>Curated looks for weddings, corporate events, and parties that make a lasting impression.</p>
+</header>
 
-<div class="grid">
-  <a href="virtual-styling.html" class="card">
-    <img src="images/virtual-styling.jpg" alt="Virtual Styling">
-    <h3>Virtual Styling</h3>
-    <p>Try styling from home.</p>
-  </a>
-
-  <a href="closet-edit.html" class="card">
-    <img src="images/closet-edit.jpg" alt="Closet Edit">
-    <h3>Closet Edit</h3>
-    <p>Organize your wardrobe.</p>
-  </a>
-
-  <a href="event-styling.html" class="card">
-    <img src="images/event-styling.jpg" alt="Event Styling">
-    <h3>Event Styling</h3>
-    <p>Curated looks for events.</p>
-  </a>
+<div class="content">
+  <img src="images/event-styling.jpg" alt="Event Styling Example">
+  <h2>About This Service</h2>
+  <p>Event Styling helps your customers look their best for any occasion. You can show images of styled outfits, color combinations, and recommended accessories.</p>
+  <a href="services.html" class="btn">Back to Services</a>
 </div>
 
 </body>
