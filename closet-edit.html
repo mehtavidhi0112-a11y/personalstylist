@@ -47,15 +47,15 @@
     }
 
     .closet-item {
-      display: block; /* make link fully clickable */
+      display: block;          /* make the whole card clickable */
+      text-decoration: none;   /* remove underline */
+      color: #222;
       background: #fff;
       border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
       text-align: center;
       transition: transform 0.2s;
-      text-decoration: none;
-      color: #222;
     }
 
     .closet-item:hover {
@@ -63,10 +63,11 @@
     }
 
     .closet-item img {
+      display: block;
       width: 100%;
       height: 220px;
       object-fit: cover;
-      display: block;
+      pointer-events: none;   /* ensure clicks go to <a> */
     }
 
     .closet-item h3 {
