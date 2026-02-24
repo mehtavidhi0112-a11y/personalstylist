@@ -2,129 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Closet Edit | The Niyati Style Edit</title>
+  <title>My services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f7f5f2;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 100px 20px 60px;
-      text-align: center;
-      background: #efece6;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    section {
-      padding: 70px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .closet-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
-
-    .closet-item {
-      display: block;          /* make the whole card clickable */
-      text-decoration: none;   /* remove underline */
-      color: #222;
-      background: #fff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .closet-item:hover {
-      transform: scale(1.05);
-    }
-
-    .closet-item img {
-      display: block;
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      pointer-events: none;   /* ensure clicks go to <a> */
-    }
-
-    .closet-item h3 {
-      margin: 12px 0 8px;
-      font-size: 20px;
-      color: #333;
-    }
-
-    .closet-item p {
-      padding: 0 10px 15px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    footer {
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-    }
+    body { font-family: Arial, sans-serif; background: #f7f5f2; margin:0; padding:0; text-align:center; }
+    h1 { padding: 40px 20px; }
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    a.card { display: block; width: 200px; background: #fff; border-radius: 12px; overflow: hidden; text-decoration: none; color: #222; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+    a.card:hover { transform: scale(1.05); }
+    a.card img { width: 100%; display: block; pointer-events: none; }
+    a.card h3 { margin: 10px 0 5px; font-size: 18px; }
+    a.card p { margin: 0 10px 10px; font-size: 14px; }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Closet Edit</h1>
-  <p>Click on any outfit to try it virtually in Virtual Styling.</p>
-</header>
+<h1>My Services</h1>
 
-<section>
-  <div class="container">
-    <div class="closet-grid">
-      <a href="virtual-styling.html" class="closet-item">
-        <img src="images/closet1.jpg" alt="Outfit 1">
-        <h3>Outfit 1</h3>
-        <p>Mix and match for casual days or work meetings.</p>
-      </a>
+<div class="grid">
+  <a href="virtual-styling.html" class="card">
+    <img src="images/virtual-styling.jpg" alt="Virtual Styling">
+    <h3>Virtual Styling</h3>
+    <p>Try styling from home.</p>
+  </a>
 
-      <a href="virtual-styling.html" class="closet-item">
-        <img src="images/closet2.jpg" alt="Outfit 2">
-        <h3>Outfit 2</h3>
-        <p>Stylish and professional combinations for your work wardrobe.</p>
-      </a>
+  <a href="closet-edit.html" class="card">
+    <img src="images/closet-edit.jpg" alt="Closet Edit">
+    <h3>Closet Edit</h3>
+    <p>Organize your wardrobe.</p>
+  </a>
 
-      <a href="virtual-styling.html" class="closet-item">
-        <img src="images/closet3.jpg" alt="Outfit 3">
-        <h3>Outfit 3</h3>
-        <p>Perfect party and event-ready looks to impress.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 The Niyati Style Edit</p>
-</footer>
+  <a href="event-styling.html" class="card">
+    <img src="images/event-styling.jpg" alt="Event Styling">
+    <h3>Event Styling</h3>
+    <p>Curated looks for events.</p>
+  </a>
+</div>
 
 </body>
 </html>
