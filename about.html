@@ -2,187 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | The Niyati Style Edit</title>
+  <title>About | My Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #f7f5f2;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 100px 20px 60px;
-      text-align: center;
-      background: #efece6;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    section {
-      padding: 70px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .story {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .story img {
-      width: 100%;
-      max-width: 450px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    }
-
-    .story-text {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .story-text h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .values {
-      background: #fff;
-      border-radius: 20px;
-      padding: 50px 30px;
-      margin-top: 80px;
-      text-align: center;
-    }
-
-    .values h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    .points {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
-
-    .point {
       background: #f7f5f2;
-      padding: 25px;
+      color: #222;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 50px 20px 20px;
+    }
+
+    .services {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+
+    .service-box {
+      width: 220px;
+      background: #fff;
       border-radius: 16px;
-      font-size: 16px;
-    }
-
-    .cta {
-      text-align: center;
-      padding: 90px 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #000;
-      color: #fff;
-      padding: 16px 36px;
+      padding: 15px;
       text-decoration: none;
-      font-size: 16px;
-      border-radius: 30px;
-      transition: 0.3s;
+      color: #222;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
     }
 
-    .btn:hover {
-      background: #444;
+    .service-box:hover {
+      transform: scale(1.05);
     }
 
-    footer {
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
+    .service-box img {
+      width: 100%;
+      border-radius: 12px;
     }
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 32px;
-      }
-      .story {
-        text-align: center;
-      }
+    section.detail {
+      padding: 70px 20px;
+      background: #fff;
+      margin-top: 40px;
+    }
+
+    section.detail img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 16px;
+      margin: 20px 0;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Style That Fits Your Real Life</h1>
-  <p>
-    Confidence doesn’t come from trends — it comes from feeling good in
-    what you wear.
-  </p>
-</header>
+<h1>My Services</h1>
 
-<section>
-  <div class="container">
-    <div class="story">
-      <img src="hero.jpg" alt="The Niyati Style Edit">
-
-      <div class="story-text">
-        <h2>My Story</h2>
-        <p>
-          I created <strong>The Niyati Style Edit</strong> for women who
-          feel overwhelmed by fashion but still want to look put together.
-        </p>
-        <p>
-          Styling isn’t about buying more clothes — it’s about understanding
-          your body, your lifestyle, and what makes you feel confident.
-        </p>
-      </div>
-    </div>
-
-    <div class="values">
-      <h2>My Styling Philosophy</h2>
-
-      <div class="points">
-        <div class="point">✔ Comfort always comes first</div>
-        <div class="point">✔ Style should feel effortless</div>
-        <div class="point">✔ No pressure to follow trends</div>
-        <div class="point">✔ Confidence over perfection</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Ready to Feel Confident in What You Wear?</h2>
-  <br>
-
-  <a class="btn"
-     href="https://www.instagram.com/direct/t/theniyatistyleedit"
-     target="_blank">
-     DM Me on Instagram
+<!-- CLICKABLE SERVICES -->
+<div class="services">
+  <a href="#virtual" class="service-box">
+    <img src="images/virtual-styling.jpg">
+    <h3>Virtual Styling</h3>
+    <p>Style from home</p>
   </a>
+
+  <a href="#closet" class="service-box">
+    <img src="images/closet-edit.jpg">
+    <h3>Closet Edit</h3>
+    <p>Organize your wardrobe</p>
+  </a>
+
+  <a href="#event" class="service-box">
+    <img src="images/event-styling.jpg">
+    <h3>Event Styling</h3>
+    <p>Special occasions</p>
+  </a>
+</div>
+
+<!-- DETAILS -->
+<section id="virtual" class="detail">
+  <h2>Virtual Styling</h2>
+  <img src="images/virtual-styling.jpg">
+  <p>
+    Online styling support to help you choose outfits, understand your body type,
+    and feel confident without shopping stress.
+  </p>
 </section>
 
-<footer>
-  <p>© 2026 The Niyati Style Edit</p>
-</footer>
+<section id="closet" class="detail">
+  <h2>Closet Edit</h2>
+  <img src="images/closet-edit.jpg">
+  <p>
+    Declutter, organize, and build outfits using what you already own.
+  </p>
+</section>
+
+<section id="event" class="detail">
+  <h2>Event Styling</h2>
+  <img src="images/event-styling.jpg">
+  <p>
+    Personalized styling for weddings, parties, and special events.
+  </p>
+</section>
 
 </body>
 </html>
